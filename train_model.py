@@ -226,7 +226,7 @@ def train(model, test_batch_list, train_batch_list, save, n_epochs=300 ,
 
 
 def start_training(depth=100, growth_rate=12, efficient=True,
-         n_epochs=1, seed=None):
+         n_epochs=300, seed=None):
     """
     training of a Denset using graph node pairs data converted into pictures data
 
