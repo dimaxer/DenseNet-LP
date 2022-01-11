@@ -22,16 +22,6 @@ This implementation is inspired by this [technical report](https://arxiv.org/pdf
 - PyTorch >=1.0.0
 - CUDA
 
-## Usage
-
-**In your existing project:**
-There is one file in the `models` folder.
- - `models/densenet.py` is an implementation based off the [torchvision](https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py) and
-[project killer](https://github.com/felixgwu/img_classification_pk_pytorch/blob/master/models/densenet.py) implementations.
-
-If you care about speed, and memory is not an option, pass the `efficient=False` argument into the `DenseNet` constructor.
-Otherwise, pass in `efficient=True`.
-
 
 
 ## Performance
@@ -43,12 +33,6 @@ A comparison of the two implementations (each is a DenseNet-BC with 100 layers, 
 | Naive          |  2.863  | 0.165                  |
 | Efficient      |  1.605  | 0.207                  |
 | Efficient (multi-GPU)      |  0.985  | -                  |
-
-
-## Other efficient implementations
-- [LuaTorch](https://github.com/liuzhuang13/DenseNet/tree/master/models) (by Gao Huang)
-- [Tensorflow](https://github.com/joeyearsley/efficient_densenet_tensorflow) (by Joe Yearsley)
-- [Caffe](https://github.com/Tongcheng/DN_CaffeScript) (by Tongcheng Li)
 
 
 
